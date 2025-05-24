@@ -10,16 +10,30 @@
 </head>
 
 <body>
-    <h1>SNAKE GAME!</h1>
-    <canvas id="gameBoard" width="600" height="400"></canvas>
-    <div id="score">Score = 0</div>
-    <div class="controls">
-        <button type="button" onclick="window.location.reload()">Reset</button>
-        <button type="button" onclick="fast()">Fast Mode</button>
-        <button type="button" onclick="PauseGame()">Pause</button>
-    </div>
+    <div id="TotalGame">
+        <h1>SNAKE GAME!</h1>
+        <canvas id="gameBoard" width="600" height="400"></canvas>
+        <div id="score">Score = 0
 
-    <script src="SnakeGame.js"></script>
+        </div>
+
+        <div class="controls">
+            <button type="button" onclick="window.location.reload()">Reset</button>
+            <button type="button" onclick="PauseGame()">Pause</button>
+            <button type="button" onclick="Play()">Play</button>
+
+        </div>
+        <div class="dropdown">
+
+            <button class="dropbtn">Mode</button>
+            <div class="dropdown-content">
+                <button onclick="fast()">Fast Mode</button>
+                <button onclick="Normal()">Normal Mode</button>
+                <button onclick="slow()">Slow Mode</button>
+            </div>
+        </div>
+
+        <script src="SnakeGame.js"></script>
 </body>
 
 </html>
